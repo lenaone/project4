@@ -40,3 +40,8 @@ body {
 .login_user {
   text-align: right;
 }
+
+.movie_poster {
+  width: 200px;
+  height: 200px;
+}

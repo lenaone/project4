@@ -1,0 +1,9 @@
+<a href="/movies/index">back</a>
+<h2>Results for "<%= params[:movie_title] %>" </h2>
+
+<% @data["results"].each do |movie_attribute| %>
+  <a href="/movies/<%= movie_attribute["id"]%>"><p><%= movie_attribute["title"] %></p></a>
+  <img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie_attribute["poster_path"]%>">
+<% end %>
+
+

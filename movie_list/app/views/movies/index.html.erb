@@ -1,0 +1,18 @@
+<header>
+  <nav>
+    <a href="/movies/popular">popular</a>
+    <a href="/movies/upcoming">Upcoming</a>
+  </nav>
+</header>
+
+<h1>Movie world</h1>
+
+<p>Search</p>
+
+  <%= form_tag '/movies/search_display' do%>
+    <input name="movie_title" type="text">
+    <button type="submit">search</button>
+  <% end %>
+
+
+
