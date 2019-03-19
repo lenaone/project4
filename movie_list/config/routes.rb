@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :bookmarks, only: [:index, :create]
+  delete '/bookmarks', to: 'bookmarks#destroy'
   post '/movies/search_display', to: 'movies#search'
   get '/movies/search_display', to: 'movies#search_display'
   get '/movies/index', to: 'movies#index'

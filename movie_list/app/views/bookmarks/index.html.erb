@@ -1,0 +1,12 @@
+<h1>Bookmark Page</h1>
+
+<% @bookmarks.each do |bookmark| %>
+  <a href="/movies/<%= bookmark.movie_id%>">
+    <p><%= Movie.find(bookmark.movie_id).title%></p>
+    <img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= Movie.find(bookmark.movie_id).poster%>">
+  </a>
+  <%= form_tag '/bookmarks', method: "delete" do %>
+    <input type="hidden" name="bookmark_id" value="<%=bookmark.id%>">
+    <button type="submit">delete</button>
+  <% end %>
+<% end %>

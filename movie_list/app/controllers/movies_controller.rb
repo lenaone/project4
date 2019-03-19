@@ -11,7 +11,8 @@ class MoviesController < ApplicationController
   def upcoming
     date = Time.now
     current_day = date.strftime("%Y-%m-%e")
-    url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-EN&region=AU&release_date.gte=#{current_day}&release_date.lte=2019-12-31"
+    current_year = date.strftime("%Y")
+    url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-EN&region=AU&release_date.gte=#{current_day}&release_date.lte=#{current_year}-12-31"
     @data = HTTParty.get(url)
     
   end

@@ -12,4 +12,9 @@
   </div>
 </div>
 
+<%= form_tag '/bookmarks' do %>
+  <input type="hidden" name="movie_id" value="<%= @movie.id %>">
+  <button type="submit">+ Favourite</button>
+<% end %>
+
 
