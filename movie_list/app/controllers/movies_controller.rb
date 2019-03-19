@@ -22,6 +22,15 @@ class MoviesController < ApplicationController
     @data = HTTParty.get(url)
   end
 
+  def genre
+    url = "https://api.themoviedb.org/3/genre/movie/list?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-US"
+    @data = HTTParty.get(url)
+
+    searched_genre_id_url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&with_genres=#{params[:id]}"
+    @genre_data = HTTParty.get(searched_genre_id_url)
+
+  end
+
   def save_movie(id, date)
     movie = Movie.new
     url="https://api.themoviedb.org/3/movie/#{id}?api_key=74e7e1d6b0003e43c02532361ec804ed"
@@ -31,9 +40,17 @@ class MoviesController < ApplicationController
     movie.title = data["title"]
     movie.plot = data["overview"]
     movie.rating = data["vote_average"]
+    movie.genre = genre_list(data)
     movie.released = date || data["release_date"]
     movie.save!
     movie
+  end
+
+  def genre_list(data)
+    categories = data.parsed_response["genres"].map do |genre|
+      genre['name']
+    end
+    categories.join(', ')
   end
 
   def show
@@ -42,7 +59,9 @@ class MoviesController < ApplicationController
     else
       @movie = Movie.find(params[:id])
     end
-  end
+    @reviews = Review.where(movie_id: params[:id])
+  end  
+
 
 
 end

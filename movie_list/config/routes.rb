@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :reviews, only: [:create]
   resources :bookmarks, only: [:index, :create]
   delete '/bookmarks', to: 'bookmarks#destroy'
   post '/movies/search_display', to: 'movies#search'
@@ -7,7 +8,9 @@ Rails.application.routes.draw do
   get '/movies/index', to: 'movies#index'
   get '/movies/upcoming', to: 'movies#upcoming'
   get '/movies/popular', to: 'movies#popular'
+  get '/movies/genre', to: 'movies#genre'
   get '/movies/:id', to: 'movies#show'
+  post '/movies/:id', to: 'reviews#create'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/', to: 'home#index'
   get '/users/sign_up', to: 'users#sign_up'

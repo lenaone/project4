@@ -1,0 +1,14 @@
+
+<main>
+  <% @data['genres'].each do |genre| %>
+    <a href="/movies/genre?id=<%= genre['id'] %>">
+      <p><%= genre['name'] %></p>
+    </a>
+  <% end %>
+    <aside>
+      <% @genre_data['results'].each do |movie_attribute| %>
+      <a href="/movies/<%= movie_attribute["id"]%>"><img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie_attribute["poster_path"]%>"></a>
+     <% end %>
+    </aside>
+  
+</main>

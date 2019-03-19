@@ -9,12 +9,28 @@
   <p> Plot: <%= @movie.plot %> </p>
   <p> Release_date: <%= @movie.released %> </p>
   <p> Ratings: <%= @movie.rating %> </p>
+  <p> Genre: <%= @movie.genre %></p>
   </div>
 </div>
 
 <%= form_tag '/bookmarks' do %>
   <input type="hidden" name="movie_id" value="<%= @movie.id %>">
   <button type="submit">+ Favourite</button>
+<% end %>
+
+<div>
+  <h3>List of reviews</h3>
+  <% @reviews.each do |review| %>
+    <p>Name: <%= User.find(review.user_id).name %></p>
+    <p>Ratings: <%= review.ratings %><p>
+    <p>Comment: <%= review.comment %></p>
+  <% end %>
+</div>
+
+<%= form_tag "/movies/#{@movie.id}" do%>
+  <input type="text" name="rating"/>
+  <textarea name="comment"></textarea>
+  <button type="submit">submit</button>
 <% end %>
 
 
