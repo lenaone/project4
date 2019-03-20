@@ -6,19 +6,43 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
   <body>
-    <% if current_user %>
-    <p class="login_user"> logged as <%= current_user.name %><a href="/users/logout" class="btn btn-primary">logout</a></p>
- 
 
-    <% else %>
+  <% if current_user %>
+  <nav class="color" >
+  <div class="nav-div">
+    <div class="nav-list">
+        LS's movie list 
+        <a class="nav-item <%= action_name == 'index' ? 'current_page' : ''%>" href="/movies/index">Home</a>
+        <a class="nav-item <%= action_name == 'popular' ? 'current_page' : ''%>" href="/movies/popular">Popular movie</a>
+        <a class="nav-item <%= action_name == 'upcoming' ? 'current_page' : ''%>" href="/movies/upcoming">Upcoming movie</a>
+        <a class="nav-item <%= action_name == 'genre' ? 'current_page' : ''%>" href="/movies/genre">Genre</a>
+    </div>
+    <div class="nav-rightside">
+        logged as <%= current_user.name %> <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="user-avartar" >
+        <div class="dropdown-div hidden">
+          <a class="dropdown-item" href="/bookmarks">Favourtie</a>
+          <a class="dropdown-item" href="/users/edit">Edit profile</a>
+          <a class="dropdown-item" href="/users/logout">logout</a>
+        </div>
+    </div>
+  </div>
+  </nav>
 
-    <% end%>
+  <% else %>
 
-    <%= yield %>
+  <% end%>
+
+  <%= yield %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
+
+
+
+

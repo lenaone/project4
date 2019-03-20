@@ -1,8 +1,8 @@
-<a href="/movies/index">back</a>
+<h1 class="upcoming-title">Upcoming movies</h1>
 
-<h3>Upcoming movies</h3>
-
-<% @data["results"].each do |movie| %>
- <a href="/movies/<%= movie["id"]%>?date=<%= movie["release_date"]%>"><img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie["poster_path"] %>"></a>
-<% end %>
+<div class="upcoming-movies">
+  <% @data["results"].each do |movie| %>
+  <a href="/movies/<%= movie["id"]%>?date=<%= movie["release_date"]%>"><img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie["poster_path"] %>"></a>
+  <% end %>
+</div>
 

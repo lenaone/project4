@@ -1,0 +1,27 @@
+
+<%= form_tag '/users/edit', method: 'put' do %>
+
+  <h1 class="logo">Edit profile</h1>
+
+  <div class="form">
+
+  <div class="name">
+  <label for="">Name:</label>
+  <input name="name" type="text" value="<%= @user.name %>">
+  </div>
+
+  <div class="email">
+  <label for="">Email:</label>
+  <input name="email" type="text" value="<%= @user.email %>">
+  </div>
+
+  <div class="password">
+  <label for="">Password:</label>
+  <input name="password" type="password" value="<%= @user.password %>">
+  </div>
+
+  <button type="submit" class="btn btn-primary">edit</button>
+
+  <div>
+
+<% end %>

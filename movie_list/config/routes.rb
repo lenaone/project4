@@ -18,4 +18,9 @@ Rails.application.routes.draw do
   get '/users/login', to: 'users#login'
   post '/users/login', to: 'users#sign_in'
   get '/users/logout', to: 'users#logout'
+  get '/users/edit', to: 'users#edit'
+  resources :users, only: [:update, :show]
+
+  
+  
 end

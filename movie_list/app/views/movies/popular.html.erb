@@ -1,7 +1,10 @@
-<a href="/movies/index">back</a>
 
-<h3>Popular movies</h3>
-<% @data["results"].each do |movie| %>
- <a href="/movies/<%= movie["id"]%>"><img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie["poster_path"]%>"></a>
-<% end %>
+
+<h1 class="popular-title">Popular movies</h1>
+
+<div class="popular-movies">
+  <% @data["results"].each do |movie| %>
+  <a href="/movies/<%= movie["id"]%>"><img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie["poster_path"]%>"></a>
+  <% end %>
+</div>
 

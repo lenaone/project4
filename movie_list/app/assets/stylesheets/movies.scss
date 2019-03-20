@@ -1,3 +1,78 @@
 // Place all the styles related to the movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.genre-div {
+  display: flex;
+}
+
+.genre-main {
+  margin: 0 30px 0 0;
+  background-color: #243665;
+  width: 350px;
+}
+
+.categories {
+  color: #8BD8BD;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover > p {
+  font-weight: bold;
+}
+
+
+.genre-aside {
+  margin: 15px 0 0 20px;
+}
+
+.current_page {
+  color: orange;
+  font-weight: bold;
+}
+
+.popular-title, .upcoming-title {
+  text-align: center;
+  margin: 20px;
+  font-family: 'Baloo Chettan', cursive;
+  color: red;
+}
+
+.popular-movies, .upcoming-movies {
+  margin-left: 6px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+
+.id_section {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.id_poster {
+  margin-top: 20px;
+}
+
+.id-details > p {
+  margin-top: 20px;
+}
+
+.plot {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.bookmark {
+  text-align: center;
+}
+
+.review {
+  text-align: center;
+}
+
+.submit-review {
+  text-align: center;
+}
+

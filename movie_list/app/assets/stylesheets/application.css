@@ -13,35 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-.logo {
-   text-align: center;
-   margin: 5% 0;
-}
- 
-.form {
-  text-align: center;
-  margin: 8% 0; 
-}
-
-.email {
-  margin: 20px 0;
-}
-
-.password {
-  margin: 20px 0;
-}
-
-body {
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("mark-hessling-560254-unsplash.jpg");
-  background-size: cover;
-}
-
-.login_user {
-  text-align: right;
-}
-
-.movie_poster {
-  width: 200px;
-  height: 200px;
-}

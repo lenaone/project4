@@ -25,6 +25,23 @@ class UsersController < ApplicationController
     end 
   end
 
+  def edit
+    @user = User.find_by(id: session[:user_id])
+  end
+
+  def show
+    @user = User.find_by(id: session[:user_id])
+  end
+
+  def update
+    user = User.find_by(id: session[:user_id])
+    user.name = params[:name]
+    user.email = params[:email]
+    user.password = params[:password]
+    user.save!
+    redirect_to '/users/edit_profile'
+  end
+
   def logout
     session[:user_id] = nil
     redirect_to '/users/login'
