@@ -1,6 +1,6 @@
 ## LS's Movie List
 
-`https://lsmovies.herokuapp.com/`
+[link](https://lsmovies.herokuapp.com/)
 
 ## Summary
 People love to watch movies. I would like the user to look for movies in my app. I have 4 tables: Users, Movies, reviews and bookmarks. Client side, There are upcoming movies, popular movies and genre. Also, User can search it manually in search bar. Other feature, user can save movies, in bookmark section and review in each movie if they want.
