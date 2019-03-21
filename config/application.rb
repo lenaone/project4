@@ -29,5 +29,8 @@ module MovieList
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Image in heroku was returning 404 - this should fix it
+    config.serve_static_assets = true 
   end
 end
