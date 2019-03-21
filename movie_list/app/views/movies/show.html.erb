@@ -1,40 +1,48 @@
+<div class="whole-page">
+  <div class="id_section">
+    <div class="id_poster">
+    <img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= @movie.poster %>" >
+    </div>
 
-<div class="id_section">
-  <div class="id_poster">
-  <img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= @movie.poster %>" >
+    <div class="id_details">
+    <p class="show-movie-title"> Title: <%= @movie.title %> </p>
+    <p class="plot"> Plot: <%= @movie.plot %> </p>
+    <p class="show-movie-release"> Release_date: <%= @movie.released %> </p>
+    <p> Ratings: <%= @movie.rating %> </p>
+    <p> Genre: <%= @movie.genre %></p>
+    </div>
   </div>
 
-  <div class="id_details">
-  <p> Title: <%= @movie.title %> </p>
-  <p class="plot"> Plot: <%= @movie.plot %> </p>
-  <p> Release_date: <%= @movie.released %> </p>
-  <p> Ratings: <%= @movie.rating %> </p>
-  <p> Genre: <%= @movie.genre %></p>
+  <div class="bookmark">
+    <%= form_tag '/bookmarks' do %>
+      <input type="hidden" name="movie_id" value="<%= @movie.id %>">
+      <button type="submit" class="btn btn-primary">+ favourite </button>
+    <% end %>
   </div>
-</div>
 
-<div class="bookmark">
-  <%= form_tag '/bookmarks' do %>
-    <input type="hidden" name="movie_id" value="<%= @movie.id %>">
-    <button type="submit">+ Favourite</button>
-  <% end %>
-</div>
+  <div class="review">
+    <h3>List of reviews</h3>
+    <% @reviews.each do |review| %>
+      <p>Name: <%= User.find(review.user_id).name %></p>
+      <p>
+      Ratings: <% review.ratings.times do %>
+                  <i class="fas fa-heart"></i>
+                <% end %>
+                <% (5 - review.ratings).times do %>
+                  <i class="far fa-heart"></i>
+                <% end %>
+      </p>
+      <p>Comment: <%= review.comment %></p>
+    <% end %>
+  </div>
 
-<div class="review">
-  <h3>List of reviews</h3>
-  <% @reviews.each do |review| %>
-    <p>Name: <%= User.find(review.user_id).name %></p>
-    <p>Ratings: <%= review.ratings %><p>
-    <p>Comment: <%= review.comment %></p>
-  <% end %>
-</div>
-
-<div class="submit-review">
-  <%= form_tag "/movies/#{@movie.id}" do%>
-    rating: <input type="text" name="rating"/>
-    comment: <textarea name="comment"></textarea>
-    <button type="submit">submit</button>
-  <% end %>
+  <div class="submit-review">
+    <%= form_tag "/movies/#{@movie.id}" do%>
+      <div class="movie-rating">rating: <input type="text" name="rating" placeholder="1-5"/></div>
+      <div class="movie-comment">comment: <textarea name="comment"></textarea></div>
+      <button type="submit" class="btn btn-primary">submit</button>
+    <% end %>
+  </div>
 </div>
 
 

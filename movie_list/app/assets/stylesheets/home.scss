@@ -2,13 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.movie_poster {
-  width: 200px;
-  height: 200px;
-}
-
 .color {
   background-color: #243665;
+}
+
+span {
+  color: #F0FFFF;
 }
 
 .nav-div {
@@ -37,7 +36,7 @@
   background-color: #243665;
 }
 
-.user-avartar {
+.user-avatar {
   width: 60px;
   height: 60px;
   border-radius: 80%;

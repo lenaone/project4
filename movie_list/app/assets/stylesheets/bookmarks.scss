@@ -4,6 +4,8 @@
 
 .bookmark-page-title {
   text-align: center;
+  color: red;
+  margin: 20px 0;
 }
 
 .bookmark-container {
@@ -18,8 +20,9 @@
 }
 .each-bookmark {
   margin-right: 20px;
+  margin-top: 20px;
 }
 
-.delete-btn {
+.btn, .btn-danger {
   margin-top: 20px;
 }

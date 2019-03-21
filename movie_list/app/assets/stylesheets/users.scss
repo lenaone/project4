@@ -4,6 +4,13 @@
 .logo {
   text-align: center;
   margin: 5% 0;
+  color: red;
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 3.2em;
+}
+
+.current-user-name {
+  margin: 0 10px;
 }
 
 .form {
@@ -17,11 +24,11 @@
 
 .password {
  margin: 20px 0;
+ margin-right: 30px;
 }
 
 body {
   background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('felix-mooneeram-222805-unsplash.jpg');
   background-size: cover;
-  
 }
 

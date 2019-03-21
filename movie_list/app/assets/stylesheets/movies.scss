@@ -31,7 +31,7 @@ a:hover > p {
   font-weight: bold;
 }
 
-.popular-title, .upcoming-title {
+.popular-title, .upcoming-title, .movie-index-title {
   text-align: center;
   margin: 20px;
   font-family: 'Baloo Chettan', cursive;
@@ -44,6 +44,19 @@ a:hover > p {
   margin: 0 auto;
 }
 
+.movie_poster {
+  width: 200px;
+  height: 200px;
+  margin-top: 5px;
+}
+
+
+.whole-page {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: rgba(225, 225, 225, .7);
+}
 
 .id_section {
   width: 85%;
@@ -51,7 +64,7 @@ a:hover > p {
   text-align: center;
 }
 
-.id_poster {
+.id_poster, .show-movie-title, .show-movie-release {
   margin-top: 20px;
 }
 
@@ -72,7 +85,55 @@ a:hover > p {
   text-align: center;
 }
 
+.movie-rating {
+  margin: 20px 0;
+}
+
+.movie-comment {
+  margin-right: 14px;
+}
+
 .submit-review {
   text-align: center;
 }
 
+.fas, .fa-heart {
+  color: red;
+}
+
+.movie-inputbox {
+  width: 25%;
+  height: 35px;
+}
+
+.movie-search {
+  width: 80%;
+  margin-left: 38%;
+  margin-top: 10%;
+}
+
+.searched-input-movietitle {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.search-display {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%
+}
+
+.searched-movie-poster {
+  width: 100%;
+  margin-top: 5px;
+}
+.searched-movie-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.each-movie {
+  padding: 2.5rem .5rem 2rem;
+  width: 18%;
+}

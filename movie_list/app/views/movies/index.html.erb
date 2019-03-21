@@ -1,11 +1,9 @@
-<h1>Movie world</h1>
+<h1 class="movie-index-title">Movie world</h1>
 
-<p>Search</p>
-
+<div class="movie-search">
   <%= form_tag '/movies/search_display' do%>
-    <input name="movie_title" type="text">
-    <button type="submit">search</button>
+    <input class="movie-inputbox" name="movie_title" type="text">
+    <button type="submit" class="btn btn-primary">search</button>
   <% end %>
-
-
+</div>
 
