@@ -1,24 +1,31 @@
-# README
+## LS's Movie List
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Summary
+People love to watch movies. I would like the user to look for movies in my app. I have 4 tables: Users, Movies, reviews and bookmarks. Client side, There are upcoming movies, popular movies and genre. Also, User can search it manually in search bar. Other feature, user can save movies, in bookmark section and review in each movie if they want.
 
-Things you may want to cover:
+## Technologies Used
+- HTML & CSS
+- Javascript
+- Ruby
+- Ruby on Rails
+- Active Record
+- Heroku
 
-* Ruby version
+## Approach
+1. Wireframe design and initial ideas
+2. Created Git Repository
+3. Started a brand new Ruby on Rails project
+4. Created tables and model classes
+5. Researched public APIs and collected the requests to be used
+6. built each page and iterated over the project until completion 
 
-* System dependencies
+## Getting it up and running
+clone it with `git clone https://github.com/lenaone/project4`
 
-* Configuration
+1. install the gems with `bundle install`
+2. create your database: `rails db:create`
+`rails db:migrate`
 
-* Database creation
+3. start the web server with `rails server`
+4. visit `http://localhost:3000` 
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

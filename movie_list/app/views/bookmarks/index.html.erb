@@ -7,7 +7,7 @@
       <img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= Movie.find(bookmark.movie_id).poster%>">
       <%= form_tag '/bookmarks', method: "delete" do %>
         <input type="hidden" name="bookmark_id" value="<%=bookmark.id%>">
-        <button class="btn btn-danger" type="submit">delete</button>
+        <button class="btn btn-danger" id="delete-btn" type="submit">delete</button>
       <% end %>
     </div>
   <% end %>

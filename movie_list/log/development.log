@@ -33875,3 +33875,2011 @@ Processing by BookmarksController#index as HTML
 Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 2.5ms)
 
 
+Started GET "/movies/index" for 127.0.0.1 at 2019-03-21 16:59:47 +1100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 42ms (Views: 34.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/index" for 127.0.0.1 at 2019-03-21 17:01:37 +1100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bookmarks" for 127.0.0.1 at 2019-03-21 17:01:41 +1100
+Processing by BookmarksController#index as HTML
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (3.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks"[0m
+  ↳ app/views/bookmarks/index.html.erb:4
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324857], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324857], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 541495], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 541495], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 490132], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 490132], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 424694], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 424694], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  Rendered bookmarks/index.html.erb within layouts/application (22.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 62ms (Views: 52.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2019-03-21 17:01:52 +1100
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 34ms (Views: 29.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-03-21 17:01:57 +1100
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 38ms (Views: 30.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/index" for 127.0.0.1 at 2019-03-21 20:19:41 +1100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 53ms (Views: 45.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:19:43 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1636ms (Views: 25.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/upcoming" for 127.0.0.1 at 2019-03-21 20:19:48 +1100
+Processing by MoviesController#upcoming as HTML
+  Rendering movies/upcoming.html.erb within layouts/application
+  Rendered movies/upcoming.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1612ms (Views: 24.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/genre" for 127.0.0.1 at 2019-03-21 20:19:53 +1100
+Processing by MoviesController#genre as HTML
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 3009ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/genre?id=35" for 127.0.0.1 at 2019-03-21 20:20:00 +1100
+Processing by MoviesController#genre as HTML
+  Parameters: {"id"=>"35"}
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 3224ms (Views: 24.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/index" for 127.0.0.1 at 2019-03-21 20:20:07 +1100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 75ms (Views: 69.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/movies/search_display" for 127.0.0.1 at 2019-03-21 20:20:18 +1100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fVT2yomchyYO52MIpQA/Sm4S8r2Icah01Xzio5eIMqCWrhGdOqB7NO27235WsfJ3mpPOnGi6DzQldoWLgTlgSQ==", "movie_title"=>"love actually"}
+  Rendering movies/search_display.html.erb within layouts/application
+  Rendered movies/search_display.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1277ms (Views: 28.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/index" for 127.0.0.1 at 2019-03-21 20:20:26 +1100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 36ms (Views: 29.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/upcoming" for 127.0.0.1 at 2019-03-21 20:20:35 +1100
+Processing by MoviesController#upcoming as HTML
+  Rendering movies/upcoming.html.erb within layouts/application
+  Rendered movies/upcoming.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1490ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:20:47 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1643ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/424783" for 127.0.0.1 at 2019-03-21 20:20:55 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"424783"}
+  [1m[36mMovie Load (0.8ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 424783], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movies_controller.rb:45
+  [1m[36mMovie Create (0.7ms)[0m  [1m[32mINSERT INTO "movies" ("id", "title", "poster", "released", "genre", "plot", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 424783], ["title", "Bumblebee"], ["poster", "/fw02ONlDhrYjTSZV8XO6hhU3ds3.jpg"], ["released", "2018-12-15"], ["genre", "Action, Adventure, Science Fiction"], ["plot", "On the run in the year 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken.  When Charlie revives him, she quickly learns this is no ordinary yellow VW bug."], ["rating", "6.5"], ["created_at", "2019-03-21 09:20:56.458594"], ["updated_at", "2019-03-21 09:20:56.458594"]]
+  ↳ app/controllers/movies_controller.rb:45
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movies_controller.rb:45
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 424783]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1167ms (Views: 23.8ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:02 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1283ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:04 +1100
+Processing by MoviesController#popular as HTML
+Started GET "/movies/297802" for 127.0.0.1 at 2019-03-21 20:21:04 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297802"}
+  [1m[36mMovie Load (2.7ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 297802], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 297802], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 297802]]
+  ↳ app/views/movies/show.html.erb:25
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:26
+  Rendered movies/show.html.erb within layouts/application (9.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 44ms (Views: 27.0ms | ActiveRecord: 13.0ms)
+
+
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1129ms (Views: 22.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:05 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1222ms (Views: 28.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:06 +1100
+Processing by MoviesController#popular as HTML
+Started GET "/movies/297802" for 127.0.0.1 at 2019-03-21 20:21:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297802"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 297802], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 297802], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 297802]]
+  ↳ app/views/movies/show.html.erb:25
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:26
+  Rendered movies/show.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 35ms (Views: 28.0ms | ActiveRecord: 1.1ms)
+
+
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1219ms (Views: 25.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/297802" for 127.0.0.1 at 2019-03-21 20:21:09 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"297802"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 297802], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 297802], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (3.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 297802]]
+  ↳ app/views/movies/show.html.erb:25
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:26
+  Rendered movies/show.html.erb within layouts/application (16.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 56ms (Views: 43.1ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:20 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1440ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:22 +1100
+Processing by MoviesController#popular as HTML
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:21:22 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (2.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1634ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:23 +1100
+Processing by MoviesController#popular as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movies_controller.rb:45
+  [1m[36mMovie Create (0.7ms)[0m  [1m[32mINSERT INTO "movies" ("id", "title", "poster", "released", "genre", "plot", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 400650], ["title", "Mary Poppins Returns"], ["poster", "/uTVGku4LibMGyKgQvjBtv3OYfAX.jpg"], ["released", "2018-12-13"], ["genre", "Fantasy, Family, Comedy"], ["plot", "In Depression-era London, a now-grown Jane and Michael Banks, along with Michael's three children, are visited by the enigmatic Mary Poppins following a personal loss. Through her unique magical skills, and with the aid of her friend Jack, she helps the family rediscover the joy and wonder missing in their lives."], ["rating", "6.7"], ["created_at", "2019-03-21 09:21:24.344303"], ["updated_at", "2019-03-21 09:21:24.344303"]]
+  ↳ app/controllers/movies_controller.rb:45
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movies_controller.rb:45
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1487ms (Views: 34.0ms | ActiveRecord: 6.2ms)
+
+
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1430ms (Views: 24.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:25 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1436ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:26 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1638ms (Views: 26.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:28 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1424ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:29 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1633ms (Views: 27.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:31 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1629ms (Views: 25.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:32 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1431ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:34 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1501ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:35 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1568ms (Views: 26.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:21:37 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1640ms (Views: 33.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/324857" for 127.0.0.1 at 2019-03-21 20:22:02 +1100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"324857"}
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324857], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324857], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 324857]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 355ms (Views: 310.2ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (3.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 61ms (Views: 50.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 56ms (Views: 50.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (2.7ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 77ms (Views: 67.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 61ms (Views: 53.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (13.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 54ms (Views: 45.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (7.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (9.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 46ms (Views: 33.3ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 54ms (Views: 47.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:07 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 49ms (Views: 39.1ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:08 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 49ms (Views: 45.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:08 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 45ms (Views: 39.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:08 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (2.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 49ms (Views: 43.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:08 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (18.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 50ms (Views: 46.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:08 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (3.9ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 49ms (Views: 38.9ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:08 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 44ms (Views: 38.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:08 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 49ms (Views: 44.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:08 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 57ms (Views: 53.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:08 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/movies/400650" for 127.0.0.1 at 2019-03-21 20:22:08 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"400650"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 400650], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 400650]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:22:11 +1100
+Processing by MoviesController#popular as HTML
+Started GET "/movies/450465" for 127.0.0.1 at 2019-03-21 20:22:13 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"450465"}
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 450465], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 450465], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 450465]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 57ms (Views: 44.0ms | ActiveRecord: 8.9ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1653ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:22:15 +1100
+Processing by MoviesController#popular as HTML
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:22:16 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (2.8ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1549ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movies_controller.rb:45
+  [1m[36mMovie Create (1.4ms)[0m  [1m[32mINSERT INTO "movies" ("id", "title", "poster", "released", "genre", "plot", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 338952], ["title", "Fantastic Beasts: The Crimes of Grindelwald"], ["poster", "/fMMrl8fD9gRCFJvsx0SuFwkEOop.jpg"], ["released", "2018-11-14"], ["genre", "Family, Fantasy, Adventure"], ["plot", "Gellert Grindelwald has escaped imprisonment and has begun gathering followers to his cause—elevating wizards above all non-magical beings. The only one capable of putting a stop to him is the wizard he once called his closest friend, Albus Dumbledore. However, Dumbledore will need to seek help from the wizard who had thwarted Grindelwald once before, his former student Newt Scamander, who agrees to help, unaware of the dangers that lie ahead. Lines are drawn as love and loyalty are tested, even among the truest friends and family, in an increasingly divided wizarding world."], ["rating", "6.9"], ["created_at", "2019-03-21 09:22:18.361671"], ["updated_at", "2019-03-21 09:22:18.361671"]]
+  ↳ app/controllers/movies_controller.rb:45
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movies_controller.rb:45
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1424ms (Views: 25.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:22:22 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1650ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/genre" for 127.0.0.1 at 2019-03-21 20:22:34 +1100
+Processing by MoviesController#genre as HTML
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 3386ms (Views: 26.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/genre?id=16" for 127.0.0.1 at 2019-03-21 20:22:43 +1100
+Processing by MoviesController#genre as HTML
+  Parameters: {"id"=>"16"}
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 2855ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/genre?id=28" for 127.0.0.1 at 2019-03-21 20:22:50 +1100
+Processing by MoviesController#genre as HTML
+  Parameters: {"id"=>"28"}
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 3299ms (Views: 25.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/genre?id=35" for 127.0.0.1 at 2019-03-21 20:23:00 +1100
+Processing by MoviesController#genre as HTML
+  Parameters: {"id"=>"35"}
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 3103ms (Views: 25.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/genre?id=18" for 127.0.0.1 at 2019-03-21 20:23:14 +1100
+Processing by MoviesController#genre as HTML
+  Parameters: {"id"=>"18"}
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 2612ms (Views: 24.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/index" for 127.0.0.1 at 2019-03-21 20:23:33 +1100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_display" for 127.0.0.1 at 2019-03-21 20:23:42 +1100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/QqcKCFHvZjDZSS1dr16wyI6ihB/enFaziSriyNRzpkW8Ht/kntBiiA5nMOFDLf+1ru2MZ+x1ho+LsyjNeCccA==", "movie_title"=>"friends"}
+  Rendering movies/search_display.html.erb within layouts/application
+  Rendered movies/search_display.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1479ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/50544" for 127.0.0.1 at 2019-03-21 20:24:18 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"50544"}
+  [1m[36mMovie Load (2.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 50544], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movies_controller.rb:45
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("id", "title", "poster", "released", "genre", "plot", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 50544], ["title", "Friends with Benefits"], ["poster", "/nKhhDFCdzxeJ3GUunQ570LDpUkz.jpg"], ["released", "2011-07-21"], ["genre", "Romance, Comedy"], ["plot", "Dylan and Jamie think it's going to be easy to add the simple act of sex to their friendship, despite what Hollywood romantic comedies would have them believe. They soon discover however that getting physical really does always lead to complications."], ["rating", "6.6"], ["created_at", "2019-03-21 09:24:20.441613"], ["updated_at", "2019-03-21 09:24:20.441613"]]
+  ↳ app/controllers/movies_controller.rb:45
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movies_controller.rb:45
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 50544]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1925ms (Views: 24.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/movies/index" for 127.0.0.1 at 2019-03-21 20:24:39 +1100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:24:41 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1287ms (Views: 40.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/upcoming" for 127.0.0.1 at 2019-03-21 20:24:46 +1100
+Processing by MoviesController#upcoming as HTML
+  Rendering movies/upcoming.html.erb within layouts/application
+  Rendered movies/upcoming.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1508ms (Views: 29.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/437586?date=2019-04-04" for 127.0.0.1 at 2019-03-21 20:24:54 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"date"=>"2019-04-04", "id"=>"437586"}
+  [1m[36mMovie Load (1.7ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 437586], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 437586], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 437586]]
+  ↳ app/views/movies/show.html.erb:25
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:26
+  Rendered movies/show.html.erb within layouts/application (11.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 47ms (Views: 35.2ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/movies/437586" for 127.0.0.1 at 2019-03-21 20:25:18 +1100
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1TOxEefdV+lei5Q3vVU13uKcSJdHAvdQHkt0UTgnVc/4oRe3G7mwUCMAe5/NR/PGsitcbiQ1Kqw090FH5zOsPA==", "rating"=>"2", "comment"=>"kjhkjhkjh", "id"=>"437586"}
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 437586], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[36mReview Create (2.1ms)[0m  [1m[32mINSERT INTO "reviews" ("user_id", "movie_id", "ratings", "comment", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 5], ["movie_id", 437586], ["ratings", 2], ["comment", "kjhkjhkjh"], ["created_at", "2019-03-21 09:25:18.701783"], ["updated_at", "2019-03-21 09:25:18.701783"]]
+  ↳ app/controllers/reviews_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:9
+Redirected to http://localhost:3000/movies/437586
+Completed 302 Found in 17ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/movies/437586" for 127.0.0.1 at 2019-03-21 20:25:18 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"437586"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 437586], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 437586], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 437586]]
+  ↳ app/views/movies/show.html.erb:25
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:26
+  Rendered movies/show.html.erb within layouts/application (2.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies/genre" for 127.0.0.1 at 2019-03-21 20:25:29 +1100
+Processing by MoviesController#genre as HTML
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 2435ms (Views: 26.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/genre?id=35" for 127.0.0.1 at 2019-03-21 20:25:34 +1100
+Processing by MoviesController#genre as HTML
+  Parameters: {"id"=>"35"}
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 3346ms (Views: 23.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/genre?id=53" for 127.0.0.1 at 2019-03-21 20:25:46 +1100
+Processing by MoviesController#genre as HTML
+  Parameters: {"id"=>"53"}
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 3312ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/399361" for 127.0.0.1 at 2019-03-21 20:25:55 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"399361"}
+  [1m[36mMovie Load (2.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 399361], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/movies_controller.rb:45
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("id", "title", "poster", "released", "genre", "plot", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["id", 399361], ["title", "Triple Frontier"], ["poster", "/aBw8zYuAljVM1FeK5bZKITPH8ZD.jpg"], ["released", "2019-03-06"], ["genre", "Action, Thriller, Crime"], ["plot", "Struggling to make ends meet, former special ops soldiers reunite for a high-stakes heist: stealing $75 million from a South American drug lord."], ["rating", "6.3"], ["created_at", "2019-03-21 09:25:57.508453"], ["updated_at", "2019-03-21 09:25:57.508453"]]
+  ↳ app/controllers/movies_controller.rb:45
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/movies_controller.rb:45
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 399361]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1693ms (Views: 23.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/bookmarks" for 127.0.0.1 at 2019-03-21 20:26:14 +1100
+Processing by BookmarksController#index as HTML
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.6ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks"[0m
+  ↳ app/views/bookmarks/index.html.erb:4
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324857], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324857], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 541495], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 541495], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 490132], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 490132], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 424694], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 424694], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  Rendered bookmarks/index.html.erb within layouts/application (16.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 47ms (Views: 33.7ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2019-03-21 20:26:24 +1100
+Processing by UsersController#edit as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 37ms (Views: 27.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/bookmarks" for 127.0.0.1 at 2019-03-21 20:26:27 +1100
+Processing by BookmarksController#index as HTML
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (12.6ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks"[0m
+  ↳ app/views/bookmarks/index.html.erb:4
+  [1m[36mMovie Load (16.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324857], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324857], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 541495], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 541495], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.9ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 490132], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 490132], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 424694], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 424694], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:6
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 504172], ["LIMIT", 1]]
+  ↳ app/views/bookmarks/index.html.erb:7
+  Rendered bookmarks/index.html.erb within layouts/application (52.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 83ms (Views: 47.0ms | ActiveRecord: 31.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:26:46 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1501ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/450465" for 127.0.0.1 at 2019-03-21 20:26:51 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"450465"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 450465], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 450465], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 450465]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 38ms (Views: 30.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:26:56 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1540ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:26:58 +1100
+Processing by MoviesController#popular as HTML
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:26:58 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 40ms (Views: 33.2ms | ActiveRecord: 1.2ms)
+
+
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1636ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:00 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1563ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:01 +1100
+Processing by MoviesController#popular as HTML
+Started GET "/movies/450465" for 127.0.0.1 at 2019-03-21 20:27:01 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"450465"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 450465], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 450465], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 450465]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 63ms (Views: 55.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:02 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (1.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (5.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 43ms (Views: 37.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (4.3ms)
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 104ms (Views: 97.4ms | ActiveRecord: 3.3ms)
+
+
+Completed 200 OK in 1535ms (Views: 57.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 42ms (Views: 37.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 49ms (Views: 44.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 44ms (Views: 39.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (5.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (8.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 42ms (Views: 32.5ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 81ms (Views: 77.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (18.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 42ms (Views: 37.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies/338952" for 127.0.0.1 at 2019-03-21 20:27:03 +1100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"338952"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:57
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 338952], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:60
+  Rendering movies/show.html.erb within layouts/application
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = $1[0m  [["movie_id", 338952]]
+  ↳ app/views/movies/show.html.erb:25
+  Rendered movies/show.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 42ms (Views: 37.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:04 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1595ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:05 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1433ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:07 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1838ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:09 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1632ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:10 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1636ms (Views: 26.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:12 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1334ms (Views: 27.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:13 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1217ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:14 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1229ms (Views: 26.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:16 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1224ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:17 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1223ms (Views: 27.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:18 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1324ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:19 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1226ms (Views: 24.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:21 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1242ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:22 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1212ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:23 +1100
+Processing by MoviesController#popular as HTML
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:24 +1100
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:24 +1100
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:24 +1100
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:24 +1100
+Processing by MoviesController#popular as HTML
+Processing by MoviesController#popular as HTML
+Processing by MoviesController#popular as HTML
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1224ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:24 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.7ms)
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.5ms)
+  Rendering movies/popular.html.erb within layouts/application
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.4ms)
+  Rendered movies/popular.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1288ms (Views: 83.9ms | ActiveRecord: 7.3ms)
+
+
+Completed 200 OK in 1311ms (Views: 90.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:25 +1100
+Completed 200 OK in 1299ms (Views: 80.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:25 +1100
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:25 +1100
+Processing by MoviesController#popular as HTML
+Completed 200 OK in 1307ms (Views: 97.5ms | ActiveRecord: 7.3ms)
+
+
+Processing by MoviesController#popular as HTML
+Processing by MoviesController#popular as HTML
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:25 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1235ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:26 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.7ms)
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.4ms)
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.4ms)
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1224ms (Views: 97.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:26 +1100
+Processing by MoviesController#popular as HTML
+Completed 200 OK in 1261ms (Views: 140.4ms | ActiveRecord: 2.8ms)
+
+
+Completed 200 OK in 1275ms (Views: 153.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:26 +1100
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:26 +1100
+Processing by MoviesController#popular as HTML
+Completed 200 OK in 1285ms (Views: 158.1ms | ActiveRecord: 2.4ms)
+
+
+Processing by MoviesController#popular as HTML
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:26 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1149ms (Views: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:27 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendering movies/popular.html.erb within layouts/application
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.3ms)
+  Rendered movies/popular.html.erb within layouts/application (0.3ms)
+  Rendered movies/popular.html.erb within layouts/application (0.7ms)
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1344ms (Views: 77.6ms | ActiveRecord: 1.3ms)
+
+
+Completed 200 OK in 1374ms (Views: 82.3ms | ActiveRecord: 0.8ms)
+
+
+Completed 200 OK in 1351ms (Views: 78.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:28 +1100
+Processing by MoviesController#popular as HTML
+Completed 200 OK in 1364ms (Views: 99.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies/popular" for 127.0.0.1 at 2019-03-21 20:27:28 +1100
+Processing by MoviesController#popular as HTML
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1196ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1157ms (Views: 25.2ms | ActiveRecord: 0.4ms)
+
+
+  Rendering movies/popular.html.erb within layouts/application
+  Rendered movies/popular.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 1260ms (Views: 22.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies/genre" for 127.0.0.1 at 2019-03-21 20:27:50 +1100
+Processing by MoviesController#genre as HTML
+  Rendering movies/genre.html.erb within layouts/application
+  Rendered movies/genre.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 2759ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
