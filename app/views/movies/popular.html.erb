@@ -4,7 +4,10 @@
 
 <div class="popular-movies">
   <% @data["results"].each do |movie| %>
-  <a href="/movies/<%= movie["id"]%>"><img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie["poster_path"]%>"></a>
+    <a href="/movies/<%= movie["id"]%>">
+    <% if !movie['poster_path'].blank? %>
+      <img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie["poster_path"]%>"></a>
+    <% end %>
   <% end %>
 </div>
 
