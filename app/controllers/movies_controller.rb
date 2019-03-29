@@ -18,14 +18,17 @@ class MoviesController < ApplicationController
   end
 
   def popular
-    url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-EN&region=AU&sort_by=popularity.desc&include_adult=false&include_video=false&page=1"
+    @page_number = params[:page] || 1
+    url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-EN&region=AU&sort_by=popularity.desc&include_adult=false&include_video=false&page=#{@page_number}"
     @data = HTTParty.get(url)
+    @total_pages = @data['total_pages']
+    
   end
 
   def genre
     url = "https://api.themoviedb.org/3/genre/movie/list?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-US"
     @data = HTTParty.get(url)
-
+    
     searched_genre_id_url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&with_genres=#{params[:id]}"
     @genre_data = HTTParty.get(searched_genre_id_url)
 

@@ -32,3 +32,26 @@ body {
   background-size: cover;
 }
 
+li {
+  list-style: none;
+}
+
+.edit-form, .signup-form {
+  display: flex;
+  margin-left: 30%;
+}
+
+.avatar-wrapping {
+  width: 250px;
+  margin-top: 10%;
+  padding: 0 100px;
+}
+
+ul {
+  padding: 0;
+}
+
+#edit, #signup {
+  margin-right: 15rem;
+  margin-top: 20px;
+}

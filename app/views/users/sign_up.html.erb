@@ -2,25 +2,35 @@
 
   <h1 class="logo">SIGN UP</h1>
 
-  <div class="form">
+  <div class="signup-form">
+    <div class="avatar-wrapping">
+        <%= image_tag('avatar3.png', {class: "avatar"}) %>
+        <ul class="avatar-dropdown hidden">
+          <% ['avatar1.png', 'avatar2.png', 'avatar3.png', 'avatar4.png', 'avatar5.png'].each do |image|%>
+          <li><%= image_tag(image, {class: 'select-avatar'})%></li>
+          <% end %>
+        </ul>
+      </div>
 
-  <div class="name">
-  <label for="">Name:</label>
-  <input name="name" type="text" placeholder="Name">
+
+    <div class="form">
+      <div class="name">
+      <label for="">Name:</label>
+      <input name="name" type="text" placeholder="Name">
+      </div>
+
+      <div class="email">
+      <label for="">Email:</label>
+      <input name="email" type="text" placeholder="Email">
+      </div>
+
+      <div class="password">
+      <label for="">Password:</label>
+      <input name="password" type="password" placeholder="Password">
+      </div>
+
+      <button type="submit" id="signup" class="btn btn-primary">sign up</button>
+    </div>
   </div>
-
-  <div class="email">
-  <label for="">Email:</label>
-  <input name="email" type="text" placeholder="Email">
-  </div>
-
-  <div class="password">
-  <label for="">Password:</label>
-  <input name="password" type="password" placeholder="Password">
-  </div>
-
-  <button type="submit" class="btn btn-primary">sign up</button>
-
-  <div>
 
 <% end %>

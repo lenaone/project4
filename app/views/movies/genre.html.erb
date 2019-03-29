@@ -1,8 +1,16 @@
 
 <div class="genre-div">
   <main class="genre-main">
+   
     <% @data['genres'].each do |genre| %>
-      <a class="categories <%= genre['id'] == params[:id].to_i ? 'current_page' : ''%>" href="/movies/genre?id=<%= genre['id'] %>">
+    <% @action = @data['genres'].first %>
+      <a class="categories <%= 
+      if genre['id'] == params[:id].to_i 
+       'current_page'
+      elsif params[:id].to_i == 0
+          genre['id'] == @action['id'] ? 'current_page' : ''
+      end
+    %>" href="/movies/genre?id=<%= genre['id']%>">
         <p class="genre_name"><%= genre['name'] %></p>
       </a>
     <% end %>
