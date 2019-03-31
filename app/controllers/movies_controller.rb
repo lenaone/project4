@@ -12,9 +12,11 @@ class MoviesController < ApplicationController
     date = Time.now
     current_day = date.strftime("%Y-%m-%e")
     current_year = date.strftime("%Y")
-    url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-EN&region=AU&release_date.gte=#{current_day}&release_date.lte=#{current_year}-12-31"
+    @page_number = params[:page] || 1
+    url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-EN&region=AU&release_date.gte=#{current_day}&release_date.lte=#{current_year}-12-31&page=#{@page_number}"
     @data = HTTParty.get(url)
-    
+    @total_pages = @data['total_pages']
+    @movies = @data['results']
   end
 
   def popular
@@ -22,16 +24,18 @@ class MoviesController < ApplicationController
     url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-EN&region=AU&sort_by=popularity.desc&include_adult=false&include_video=false&page=#{@page_number}"
     @data = HTTParty.get(url)
     @total_pages = @data['total_pages']
-    
+    @movies = @data['results']
   end
 
   def genre
     url = "https://api.themoviedb.org/3/genre/movie/list?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-US"
     @data = HTTParty.get(url)
-    
-    searched_genre_id_url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&with_genres=#{params[:id]}"
+    @selected_genre_id = params[:id].blank? ? @data['genres'].first['id'] : params[:id]
+    @page_number = params[:page] || 1
+    searched_genre_id_url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&with_genres=#{@selected_genre_id}&page=#{@page_number}"
     @genre_data = HTTParty.get(searched_genre_id_url)
-
+    @total_pages = @genre_data['total_pages'].to_i > 1000 ? 1000 : @genre_data['total_pages']
+    @movies = @genre_data['results']
   end
 
   def save_movie(id, date)

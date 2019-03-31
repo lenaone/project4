@@ -3,46 +3,5 @@
 <h1 class="popular-title">Popular movies</h1>
 
 <div class="popular-movies">
-  <% @data["results"].each do |movie| %>
-    <a href="/movies/<%= movie["id"]%>">
-    <% if !movie['poster_path'].blank? %>
-      <img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie["poster_path"]%>"></a>
-    <% end %>
-  <% end %>
+  <%= render partial: "movies", locals: { movies: @movies, page_number: @page_number, total_pages: @total_pages } %>
 </div>
-
-<h1 class="error"><%= error = "No more popular movies" %></h1>
-
-<nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" aria-label="Previous" href="<%= movies_popular_url(page: 1)%>">
-        <span class="previous" tabindex="-1" aria-hidden="true"> &laquo;</span>
-      </a>
-    </li>
-    <li class="page-item">
-    <% previous = @page_number.to_i - 1 %>
-      <a class="page-link" href="<%= movies_popular_url(page: previous == 0 ? 1 : previous)%>">
-      <%= previous == 0 ? 1 : previous %>
-      </a>
-    </li>
-    <li class="page-item">
-      <% current = @page_number.to_i %>
-      <a class="page-link" href="<%= movies_popular_url(page: current == 1 ? 2 : current)%>">
-      <%= current == 1 ? 2 : current %></a>
-    </li>
-    <li class="page-item">
-    <% next_page = @page_number.to_i + 1 %>
-      <a class="page-link" href="<%= movies_popular_url(page: next_page == 2 ? 3 : next_page) %>">
-      <%= next_page == 2 ? 3 : next_page %></a> 
-    </li>
-
-    <li class="page-item">
-    
-      <a class="page-link" aria-label="Next" 
-      href="<%= movies_popular_url(page: @page_number.to_i > @total_pages ? error : @total_pages)%>">
-        <span class="next" aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>

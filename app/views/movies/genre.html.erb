@@ -1,14 +1,12 @@
 
 <div class="genre-div">
   <main class="genre-main">
-   
     <% @data['genres'].each do |genre| %>
-    <% @action = @data['genres'].first %>
       <a class="categories <%= 
       if genre['id'] == params[:id].to_i 
        'current_page'
       elsif params[:id].to_i == 0
-          genre['id'] == @action['id'] ? 'current_page' : ''
+          genre['id'] == @selected_genre_id ? 'current_page' : ''
       end
     %>" href="/movies/genre?id=<%= genre['id']%>">
         <p class="genre_name"><%= genre['name'] %></p>
@@ -16,10 +14,6 @@
     <% end %>
   </main>
   <aside class="genre-aside">
-    <% @genre_data['results'].each do |movie_attribute| %>
-      <a href="/movies/<%= movie_attribute["id"]%>">
-        <img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie_attribute["poster_path"]%>">
-      </a>
-    <% end %>
+     <%= render partial: "movies", locals: { movies: @movies, page_number: @page_number, total_pages: @total_pages } %>
   </aside>
 </div>

@@ -1,8 +1,6 @@
 <h1 class="upcoming-title">Upcoming movies</h1>
 
 <div class="upcoming-movies">
-  <% @data["results"].each do |movie| %>
-  <a href="/movies/<%= movie["id"]%>?date=<%= movie["release_date"]%>"><img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie["poster_path"] %>"></a>
-  <% end %>
+  <%= render partial: 'movies', locals: { movies: @movies, page_number: @page_number, total_pages: @total_pages} %>
 </div>
 
