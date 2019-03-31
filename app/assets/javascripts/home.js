@@ -4,31 +4,31 @@
 
   window.onload = function(e) {
 
-    let user_avatar = document.querySelector('.avatar')
+    let userAvatar = document.querySelector('.avatar')
     let avatars = document.querySelector('.avatar-dropdown')
-    let selected_avatar = document.querySelectorAll('.select-avatar')
+    let selectedAvatar = document.querySelectorAll('.select-avatar')
 
     let changedToUserAvatar = function(e) {
       // set value in hidden field
       let inputAvatar = document.querySelector('.inputAvatar')
       inputAvatar.value = e.target.dataset.image
-      user_avatar.src = e.target.src
+      userAvatar.src = e.target.src
     }
-    selected_avatar.forEach( avatar => avatar.addEventListener('click', changedToUserAvatar) )
+    selectedAvatar.forEach( avatar => avatar.addEventListener('click', changedToUserAvatar) )
 
     let dropdownAvatar = function() {
       avatars.classList.toggle('hidden')
     }
-    if (user_avatar) {
-      user_avatar.addEventListener('click', dropdownAvatar) 
+    if (userAvatar) {
+      userAvatar.addEventListener('click', dropdownAvatar) 
     }
 
     var displayDropdownMenu = function() {
-      dropdown_menus.classList.toggle('hidden')
+      dropdownMenus.classList.toggle('hidden')
     }
   
     var icon =  document.querySelector('.user-avatar')
-    var dropdown_menus = document.querySelector('.dropdown-div')
+    var dropdownMenus = document.querySelector('.dropdown-div')
     if (icon) {
       icon.addEventListener('click', displayDropdownMenu)   
     }
