@@ -4,9 +4,8 @@
   <% @data["results"].each do |movie_attribute| %>
   <div class="each-movie">
     <a href="/movies/<%= movie_attribute["id"]%>">
-        <div class="searched-movie-title"><%= movie_attribute["title"] %></div>
+      <img class="searched-movie-poster" src="https://image.tmdb.org/t/p/original<%= movie_attribute["poster_path"]%>">
     </a>
-    <img class="searched-movie-poster" src="https://image.tmdb.org/t/p/original<%= movie_attribute["poster_path"]%>">
   </div>
   <% end %>
 

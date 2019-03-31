@@ -1,0 +1,4 @@
+<a href="/movies/<%= movie["id"]%>">
+  <% if !movie['poster_path'].blank? %>
+    <img class="movie_poster" src="https://image.tmdb.org/t/p/original<%= movie["poster_path"]%>"></a>
+<% end %>

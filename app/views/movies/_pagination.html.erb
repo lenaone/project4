@@ -1,0 +1,31 @@
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" aria-label="Previous" href="?id=<%=@selected_genre_id%>&page=1">
+        <span class="previous" tabindex="-1" aria-hidden="true"> &laquo;</span>
+      </a>
+    </li>
+    <li class="page-item">
+    <% previous = page_number.to_i - 1 %>
+      <a class="page-link" href="?id=<%=@selected_genre_id%>&page=<%= previous == 0 ? 1 : previous %>">
+      <%= previous == 0 ? 1 : previous %>
+      </a>
+    </li>
+    <li class="page-item">
+      <% current = page_number.to_i %>
+      <a class="page-link" href="?id=<%=@selected_genre_id%>&page=<%= current == 1 ? 2 : current %>">
+      <%= current == 1 ? 2 : current %></a>
+    </li>
+    <li class="page-item">
+    <% next_page = page_number.to_i + 1 %>
+      <a class="page-link" href="?id=<%=@selected_genre_id%>&page=<%= next_page == 2 ? 3 : next_page %>">
+      <%= next_page == 2 ? 3 : next_page %></a> 
+    </li>
+    <li class="page-item">
+      <a class="page-link" aria-label="Next" 
+      href="?id=<%=@selected_genre_id%>&page=<%= total_pages %>">
+        <span class="next" aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
