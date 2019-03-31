@@ -26,7 +26,7 @@
         <a class="nav-item <%= action_name == 'genre' ? 'current_page' : ''%>" href="/movies/genre">Genre</a>
     </div>
     <div class="nav-rightside">
-        <span class="current-user-name">logged as <%= current_user.name %></span><%= image_tag('avatar3.png', {class: "user-avatar"}) %>
+        <span class="current-user-name">logged as <%= current_user.name %></span><%= image_tag(current_user.avatar, {class: "user-avatar"}) %>
         <div class="dropdown-div hidden">
           <a class="dropdown-item" href="/bookmarks">Favourtie</a>
           <a class="dropdown-item" href="/users/edit">Edit profile</a>

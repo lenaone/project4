@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     user.name = params[:name]
     user.email = params[:email]
     user.password = params[:password]
+    user.avatar = params[:avatar]
     user.save
     redirect_to '/users/login'
   end
@@ -26,7 +27,6 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find_by(id: session[:user_id])
   end
 
   def show
@@ -38,8 +38,9 @@ class UsersController < ApplicationController
     user.name = params[:name]
     user.email = params[:email]
     user.password = params[:password]
+    user.avatar = params[:avatar]
     user.save!
-    redirect_to '/users/edit_profile'
+    redirect_to '/users/edit'
   end
 
   def logout
