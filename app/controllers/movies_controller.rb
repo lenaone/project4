@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
 
   def upcoming
     date = Time.now
-    current_day = date.strftime("%Y-%m-%e")
+    current_day = date.strftime("%Y-%m-%d")
     current_year = date.strftime("%Y")
     @page_number = params[:page] || 1
     url = "https://api.themoviedb.org/3/discover/movie?api_key=74e7e1d6b0003e43c02532361ec804ed&language=en-EN&region=AU&release_date.gte=#{current_day}&release_date.lte=#{current_year}-12-31&page=#{@page_number}"
