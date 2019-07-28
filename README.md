@@ -22,7 +22,7 @@ People love to watch movies. I would like the user to look for movies in my app.
 6. built each page and iterated over the project until completion 
 
 ## Getting it up and running
-clone it with `git clone https://github.com/lenaone/project4`
+clone it with `git clone https://github.com/lenaone/LS_MovieList.git`
 
 1. install the gems with `bundle install`
 2. create your database: `rails db:create`
